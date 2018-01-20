@@ -4,12 +4,9 @@
   font-size: 12px;
 }
 .Layout__section {
-  height: 384px;
-  width: 292px;
   border-radius: 4px 4px 0 0;
   background-color: #ffffff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
-  margin: 10px;
 }
 .Chatbox-header {
   border-radius: 4px 4px 0 0;
@@ -61,22 +58,22 @@
   overflow-y: auto;
   padding: 18px 16px;
 }
-.Collocutor::after {
+.Message::after {
   content: "";
   clear: both;
   display: block;
 }
-.Collocutor_end-answer {
+.Message_end-answer {
   margin-bottom: 17px;
 }
-.Collocutor__avatar {
+.Message__avatar {
   border-radius: 50%;
   float: left;
 }
-.Collocutor__answer {
+.Message__answer_friend {
   margin: 0 0 0 36px;
 }
-.Collocutor__answer__msg {
+.Message__answer_friend .Message__answer__msg {
   float: left;
   margin: 0;
   border-radius: 14px;
@@ -86,39 +83,29 @@
   max-width: 180px;
   text-align: left;
 }
-.Collocutor__answer__msg_first-msg {
+.Message__answer_friend .Message__answer__msg:not(:first-of-type) {
+  clear: left;
+}
+.Message__answer_friend .Message__answer__msg::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.Message__answer_friend .Message__answer__msg_first-msg {
   border-radius: 14px 14px 14px 0;
 }
-.Collocutor__answer__msg_nth-msg {
+.Message__answer_friend .Message__answer__msg_nth-msg {
   border-radius: 0 14px 14px 0;
   margin-top: 1px;
 }
-.Collocutor__answer__msg_last-msg {
+.Message__answer_friend .Message__answer__msg_last-msg {
   border-radius: 0 14px 14px 14px;
   margin-top: 1px;
 }
-.Time-msg {
-  font-size: 10px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.3px;
-  text-align: center;
-  color: #828282;
-  margin: 9px 0 10px 0;
-}
-.My-answer_end-answer {
-  margin-bottom: 17px;
-}
-.My-answer::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.My-answer__msg {
-  margin: 0;
+.Message__answer_owner .Message__answer__msg {
   float: right;
+  clear: right;
+  margin: 0;
   max-width: 160px;
   line-height: 138%;
   padding: 5px 12px 6px 12px;
@@ -126,16 +113,29 @@
   background-color: #2979ff;
   text-align: left;
 }
-.My-answer__msg_first-msg {
+.Message__answer_owner .Message__answer__msg::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.Message__answer_owner .Message__answer__msg_first-msg {
   border-radius: 14px 14px 0 14px;
 }
-.My-answer__msg_nth-msg {
+.Message__answer_owner .Message__answer__msg_nth-msg {
   margin-top: 1px;
   border-radius: 14px 0 0 14px;
 }
-.My-answer__msg__last-msg {
+.Message__answer_owner .Message__answer__msg_last-msg {
   margin-top: 1px;
   border-radius: 14px 0 14px 14px;
+}
+.Time-msg {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #828282;
+  margin: 9px 0 10px 0;
 }
 .New-msg {
   padding: 8px 16px 12px 16px;
