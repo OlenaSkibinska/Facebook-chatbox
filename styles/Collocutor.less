@@ -1,0 +1,42 @@
+.Collocutor {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  &_end-answer{
+    margin-bottom: 17px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    float: left;
+  }
+  &__answer{
+    margin: 0 0 0 36px;
+    &__msg {
+      float: left;
+      margin: 0;
+      border-radius: 14px;
+      padding: 6px 12px 7px 12px;
+      color: #353535;
+      background-color: #f3f3f3;
+      max-width: 180px;
+      text-align: left;
+
+      &_first-msg{
+        border-radius: 14px 14px 14px 0;
+      }
+      &_nth-msg{
+        border-radius: 0 14px 14px 0;
+        margin-top: 1px;
+      }
+      &_last-msg{
+        border-radius: 0 14px 14px 14px;
+        margin-top: 1px;
+
+      }
+    }
+  }
+
+}

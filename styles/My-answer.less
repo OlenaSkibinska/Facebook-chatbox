@@ -1,0 +1,32 @@
+.My-answer {
+  &_end-answer {
+    margin-bottom: 17px;
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  &__msg {
+    margin: 0;
+    float: right;
+    max-width: 160px;
+    line-height: 138%;
+    padding: 5px 12px 6px 12px;
+    color: #ffffff;
+    background-color: #2979ff;
+    text-align: left;
+    &_first-msg {
+      border-radius: 14px 14px 0 14px;
+    }
+    &_nth-msg {
+      margin-top: 1px;
+      border-radius: 14px 0 0 14px;
+
+    }
+    &__last-msg {
+      margin-top: 1px;
+      border-radius: 14px 0 14px 14px;
+    }
+  }
+}

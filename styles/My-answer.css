@@ -1,0 +1,29 @@
+.My-answer_end-answer {
+  margin-bottom: 17px;
+}
+.My-answer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.My-answer__msg {
+  margin: 0;
+  float: right;
+  max-width: 160px;
+  line-height: 138%;
+  padding: 5px 12px 6px 12px;
+  color: #ffffff;
+  background-color: #2979ff;
+  text-align: left;
+}
+.My-answer__msg_first-msg {
+  border-radius: 14px 14px 0 14px;
+}
+.My-answer__msg_nth-msg {
+  margin-top: 1px;
+  border-radius: 14px 0 0 14px;
+}
+.My-answer__msg__last-msg {
+  margin-top: 1px;
+  border-radius: 14px 0 14px 14px;
+}
