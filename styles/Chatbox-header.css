@@ -18,6 +18,7 @@
   color: #ffffff;
   margin-left: 8px;
   margin-right: auto;
+  font-weight: bold;
 }
 .Chatbox-header__icon_plus {
   background: url("../img/Plus.svg") no-repeat;

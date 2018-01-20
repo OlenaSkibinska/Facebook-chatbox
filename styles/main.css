@@ -1,9 +1,11 @@
 .Layout {
   background-color: #e3f2fd;
-  font-family: OpenSans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
 }
 .Layout__section {
+  height: 384px;
+  width: 292px;
   border-radius: 4px 4px 0 0;
   background-color: #ffffff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
@@ -33,6 +35,7 @@
   color: #ffffff;
   margin-left: 8px;
   margin-right: auto;
+  font-weight: bold;
 }
 .Chatbox-header__icon_plus {
   background: url("../img/Plus.svg") no-repeat;
@@ -73,7 +76,7 @@
   display: block;
 }
 .Message_end-answer {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 .Message__avatar {
   border-radius: 50%;
@@ -144,7 +147,7 @@
   letter-spacing: 0.3px;
   text-align: center;
   color: #828282;
-  margin: 9px 0 10px 0;
+  margin: 8px 0 9px 0;
 }
 .New-msg {
   padding: 8px 16px 12px 16px;
