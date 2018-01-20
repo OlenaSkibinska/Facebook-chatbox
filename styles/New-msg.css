@@ -1,10 +1,6 @@
 .New-msg {
   padding: 8px 16px 12px 16px;
   height: 43px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
   background-color: #ffffff;
 }
 .New-msg__input {
