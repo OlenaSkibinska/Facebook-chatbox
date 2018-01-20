@@ -13,7 +13,7 @@
 .Message__answer_friend {
   margin: 0 0 0 36px;
 }
-.Message__answer_friend .Message__answer__msg {
+.Message__answer_friend .Message__msg {
   float: left;
   margin: 0;
   border-radius: 14px;
@@ -23,26 +23,26 @@
   max-width: 180px;
   text-align: left;
 }
-.Message__answer_friend .Message__answer__msg:not(:first-of-type) {
+.Message__answer_friend .Message__msg:not(:first-of-type) {
   clear: left;
 }
-.Message__answer_friend .Message__answer__msg::after {
+.Message__answer_friend .Message__msg::after {
   content: "";
   clear: both;
   display: block;
 }
-.Message__answer_friend .Message__answer__msg_first-msg {
+.Message__answer_friend .Message__msg_first-msg {
   border-radius: 14px 14px 14px 0;
 }
-.Message__answer_friend .Message__answer__msg_nth-msg {
+.Message__answer_friend .Message__msg_nth-msg {
   border-radius: 0 14px 14px 0;
   margin-top: 1px;
 }
-.Message__answer_friend .Message__answer__msg_last-msg {
+.Message__answer_friend .Message__msg_last-msg {
   border-radius: 0 14px 14px 14px;
   margin-top: 1px;
 }
-.Message__answer_owner .Message__answer__msg {
+.Message__answer_owner .Message__msg {
   float: right;
   clear: right;
   margin: 0;
@@ -53,19 +53,19 @@
   background-color: #2979ff;
   text-align: left;
 }
-.Message__answer_owner .Message__answer__msg::after {
+.Message__answer_owner .Message__msg::after {
   content: "";
   clear: both;
   display: block;
 }
-.Message__answer_owner .Message__answer__msg_first-msg {
+.Message__answer_owner .Message__msg_first-msg {
   border-radius: 14px 14px 0 14px;
 }
-.Message__answer_owner .Message__answer__msg_nth-msg {
+.Message__answer_owner .Message__msg_nth-msg {
   margin-top: 1px;
   border-radius: 14px 0 0 14px;
 }
-.Message__answer_owner .Message__answer__msg_last-msg {
+.Message__answer_owner .Message__msg_last-msg {
   margin-top: 1px;
   border-radius: 14px 0 14px 14px;
 }
