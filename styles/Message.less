@@ -11,18 +11,17 @@
     border-radius: 50%;
     float: left;
   }
-
-  &__answer_friend {
+  &__list_friend {
     margin: 0 0 0 36px;
-    .Message__msg{
+    .Message__item{
       float: left;
-      margin: 0;
       border-radius: 14px;
       padding: 6px 12px 7px 12px;
       color: #353535;
       background-color: #f3f3f3;
       max-width: 180px;
       text-align: left;
+      margin: 0;
 
       &:not(:first-of-type) {
         clear: left;
@@ -47,8 +46,8 @@
       }
     }
   }
-  &__answer_owner {
-    .Message__msg {
+  &__list_owner {
+    .Message__item {
       float: right;
       clear: right;
       margin: 0;
