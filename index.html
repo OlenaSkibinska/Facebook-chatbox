@@ -6,22 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Facebook chatbox</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/main.less">
 </head>
-<body style="background-color: #e3f2fd;">
+<body>
+<script src="scripts/less.min.js"></script>
 <section class="Chat">
     <header class="Chat__header">
         <div class="Chat__online-indicator"></div>
-        <p class="Chat__name-user">Kristaps Elsins</p>
-        <button class="Chat__header-icon Chat__header-icon_plus"></button>
-        <button class="Chat__header-icon Chat__header-icon_video"></button>
-        <button class="Chat__header-icon Chat__header-icon_cog"></button>
-        <button class="Chat__header-icon Chat__header-icon_close"></button>
+        <p class="Chat__name-friend">Kristaps Elsins</p>
+        <button class="Chat__header-option Chat__header-option_plus"></button>
+        <button class="Chat__header-option Chat__header-option_video"></button>
+        <button class="Chat__header-option Chat__header-option_cog"></button>
+        <button class="Chat__header-option Chat__header-option_close"></button>
     </header>
     <div class="Chat__body">
         <div class="Message">
             <img class="Message__avatar"
-                 src="http://res.cloudinary.com/drzw6h31n/image/upload/c_scale,w_28/v1516446514/avatar_mkuryn.png">
+                 src="http://res.cloudinary.com/drzw6h31n/image/upload/c_scale,w_28/v1516446514/avatar_mkuryn.png" alt="">
             <div class="Message__list Message__list_friend">
                 <p class="Message__item">Yo, Can you update views?</p>
             </div>
@@ -36,17 +37,16 @@
         </div>
         <div class="Message Message_end-answer">
             <div class="Message__list Message__list_owner">
-                <p class="Message__item Message__item_first-msg">Hi, as I noted in Email last week - I am
-                    on vacation.</p>
-                <p class="Message__item Message__item_last-msg">I will be back next week</p>
+                <p class="Message__item">Hi, as I noted in Email last week - I am on vacation.</p>
+                <p class="Message__item">I will be back next week</p>
             </div>
         </div>
         <div class="Message">
             <img class="Message__avatar"
                  src="http://res.cloudinary.com/drzw6h31n/image/upload/c_scale,w_28/v1516446514/avatar_mkuryn.png">
             <div class="Message__list Message__list_friend">
-                <p class="Message__item Message__item_first-msg">Ahh sorry, missed that</p>
-                <p class="Message__item Message__item_last-msg">Let's talk next week</p>
+                <p class="Message__item">Ahh sorry, missed that</p>
+                <p class="Message__item">Let's talk next week</p>
             </div>
         </div>
     </div>
